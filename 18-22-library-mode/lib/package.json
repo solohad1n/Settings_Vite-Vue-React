@@ -1,0 +1,31 @@
+{
+  "name": "@igorbabko.teach/pluck",
+  "version": "1.1.3",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./log": {
+      "import": "./dist/log.js",
+      "require": "./dist/log.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
+  },
+  "peerDependencies": {
+    "collect.js": "^4.36.1"
+  }
+}
